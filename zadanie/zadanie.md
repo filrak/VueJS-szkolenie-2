@@ -7,7 +7,9 @@ Wyobraźmy sobie, że otrzymujemy od klienta listę wymagań funkcjonalnych. Spo
 
 1. Serwis ma posiadać trzy typy podstron. Na stronie głównej powinny zostać wyświetlone nazwy produktów. Po kliknięciu w każdy produkt mozemy przejsć do podstrony zawierajacej zdjęcie i cenę danego produktu. Kolorem czerwonym (klasą css) na stronie głównej powinny zostać oznaczone produkty niedostępne (`availibility: false`), Trzecią strona jest strona statyczna z kontaktem. Adresy podstrony z produktem powinny mieć postać `/product/id`, adres podstrony z kontaktem `/contact`. (produkt powinien być osobnym komponentem)
 
-2. Powinniśmy mieć możliwość oznaczenia produktu na listingu jako niechciany kiedy wiemy, ze nie będzie nas on interesował co poskutkuje usunięciem produktu z listy (uzyjcie emisjiz darzeń z komponentu produktu).
+2. Powinniśmy mieć możliwość oznaczenia produktu na listingu jako niechciany kiedy wiemy, ze nie będzie nas on interesował co poskutkuje usunięciem produktu z listy (uzyjcie emisji zdarzeń z komponentu produktu).
+
+3. Na górze strony powinno znajdowac się menuz  odnośnikiem do kontaktu i strony głównej
 
  Oto modele danych, na którym będziemy pracować.
 
