@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import pt from '../components/PostTile.vue'
+import PostTile from '../components/PostTile.vue'
 
   export default {
     name: 'listing',
@@ -30,7 +30,7 @@ import pt from '../components/PostTile.vue'
       )
     },
     components: {
-      pt
+      PostTile
     }
   }
 </script>
