@@ -16,3 +16,9 @@ The recommended order of reading the project files is:
 4. `src/vue-basics/pages/Listing.vue`
 5. `src/vue-basics/components/PostTile.vue`
 5. `src/vue-basics/components/Post.vue`
+
+## Setup
+
+````npm install````
+
+````npm run dev````
