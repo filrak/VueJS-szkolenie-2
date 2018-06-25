@@ -16,7 +16,7 @@ export const MUTATION_TYPES = {
 // Vuex stores can be splitter into modules.
 // It's a good practice to use this feature to split your state into smaller peices divided by state context
 
-// Forst we are creating post module to handle posts in our blog.
+// First we are creating post module to handle posts in our blog.
 const postModule = {
   // By default, actions, mutations and getters inside modules are still registered 
   // under the global namespace - this allows multiple modules to react to the same mutation/action type.
@@ -50,6 +50,7 @@ const postModule = {
   },
   // All vuex-related business logic that is responsible for more complex operations than only updating the state shpuld be
   // written as actions. Usually we do things like: 'fetch data and update state' along with some operations on this data.
+  // Read more about actions: https://vuex.vuejs.org/guide/actions.html
   actions: {
     fetchPosts (context) {
       // This method was previously placed in Listing.vue file.
@@ -67,8 +68,11 @@ const postModule = {
       .then ( json => context.commit(MUTATION_TYPES.POST_SET_CURRENT, json)  )
     }
   }
+  // If you want to get a subset of your state and copy/return it into your component you can use getters:
+  // https://vuex.vuejs.org/guide/getters.html 
 }
 
+// We can create other modules
 const usermodule = {
   namespaced: true,
   state: {}
@@ -76,6 +80,7 @@ const usermodule = {
   // is to demonstrate how to create multiple Vuex modules
 }
 
+// Now we are creating Vuex store instance and exporting it so it can be injected into our app's entry point in 'main.js'
 export const store = new Vuex.Store({
   modules: {
     post: postModule,
