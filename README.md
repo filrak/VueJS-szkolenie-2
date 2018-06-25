@@ -1,10 +1,18 @@
-# Szkolenie nr 2 z Vue.js
+# Vue.js Introduction APP
 
-## Materiał poruszony na szkoleniu
+This repo is a part of [Vue Storefront](https://github.com/DivanteLtd/vue-storefront) training but it's also useful as a standlone introduction to Vue and Vuex.
 
-[Krótka prezentacja wprowadzajaca do nowych narzędzi](https://docs.google.com/presentation/d/1YUn_NcOe_JgSgi_eNZzr025Bp9mlY1-scE60j7K-ZV0/edit?usp=sharing)
+## How to use it?
 
-1. Vue-cli
-2. Single FIle Components
-3. One-way data flow i zdarzenia `$emit`, `$on`
-4. Vue-router
+The best way to learn from this repo is to read the application files in order. In each file we are using new Vue concept.
+
+
+In `src/main.js' you can choose if you want to run Vue app without or with state management by uncommenting entry point for each of them.
+
+The recommended order of reading the project files is:
+1. `src/vue-basics/main.js`
+2. `src/vue-basics/App.vue`
+3. `src/vue-basics/router.js`
+4. `src/vue-basics/pages/Listing.vue`
+5. `src/vue-basics/components/PostTile.vue`
+5. `src/vue-basics/components/Post.vue`
